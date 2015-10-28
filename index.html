@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>html5|Video player</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <header>
+        <h1>HTML5视频播放器</h1>
+    </header>
+
+    <section id="wrapper">
+
+        <!-- Title -->
+        <div class="videoContainer">
+
+            <video id="myVideo" controls preload="auto" poster="images/poster.jpg" width="600" height="350" >
+                <source src="media/oceans.mp4" type="video/mp4" />
+            </video>
+            <div class="caption">正在播放：oceans.mp4</div>
+            <div class="control">
+                <div class="topControl">
+                    <div class="progress">
+                        <span class="bufferBar"></span>
+                        <span class="timeBar"></span>
+                    </div>
+                    <div class="time">
+                        <span class="current"></span> /
+                        <span class="duration"></span>
+                    </div>
+                </div>
+
+                <div class="btmControl">
+                    <div class="btnPlay btn" title="Play/Pause video"></div>
+                    <div class="btnStop btn" title="Stop video"></div>
+                    <div class="spdText btn">PlayR: </div>
+                    <div class="btnx1 btn text selected" title="Normal speed">x1</div>
+                    <div class="btnx3 btn text" title="Fast forward x3">x3</div>
+                    <div class="btnFS btn" title="Switch to full screen"></div>
+                    <div class="btnLight lighton btn" title="Turn on/off light"></div>
+                    <div class="volume" title="Set volume">
+                        <span class="volumeBar"></span>
+                    </div>
+                    <div class="sound sound2 btn" title="Mute/Unmute sound"></div>
+                </div>
+
+            </div>
+            <div class="loading"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div id="foot">
+        ----成都东软学院  12级软件工程三班  赵饰凯----
+            </div>
+    </footer>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/video.js"></script>
+</body>
+</html>
